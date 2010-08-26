@@ -1,0 +1,20 @@
+<h1>Editing club_membership</h1>
+
+<% form_for(@club_membership) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :club_id %><br />
+    <%= f.text_field :club_id %>
+  </p>
+  <p>
+    <%= f.label :fighter_id %><br />
+    <%= f.text_field :fighter_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @club_membership %> |
+<%= link_to 'Back', club_memberships_path %>

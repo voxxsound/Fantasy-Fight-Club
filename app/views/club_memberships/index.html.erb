@@ -1,0 +1,22 @@
+<h1>Listing club_memberships</h1>
+
+<table>
+  <tr>
+    <th>Club</th>
+    <th>Fighter</th>
+  </tr>
+
+<% @club_memberships.each do |club_membership| %>
+  <tr>
+    <td><%=h club_membership.club_id %></td>
+    <td><%=h club_membership.fighter_id %></td>
+    <td><%= link_to 'Show', club_membership %></td>
+    <td><%= link_to 'Edit', edit_club_membership_path(club_membership) %></td>
+    <td><%= link_to 'Destroy', club_membership, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New club_membership', new_club_membership_path %>

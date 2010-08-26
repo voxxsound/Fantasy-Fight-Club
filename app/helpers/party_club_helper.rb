@@ -1,0 +1,2 @@
+module PartyClubHelper
+end

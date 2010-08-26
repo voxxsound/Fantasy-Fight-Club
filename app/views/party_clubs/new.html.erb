@@ -1,0 +1,23 @@
+<h1>New club</h1>
+
+<% form_for(@club) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label "Club Owner" %><br />
+    <%=h @party.first_name + " " + @party.last_name %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :league_id %><br />
+    <%= f.select(:league_id, League.all.collect {|p| [ p.name, p.id ] }, { :include_blank => true }) %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', party_clubs_path %>

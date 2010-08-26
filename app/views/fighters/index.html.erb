@@ -1,0 +1,28 @@
+<h1>Listing fighters</h1>
+
+<table>
+  <tr>
+    <th>Organization</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Nickname</th>
+    <th>Weightclass</th>
+  </tr>
+
+<% @fighters.each do |fighter| %>
+  <tr>
+    <td><%=h fighter.organization_id %></td>
+    <td><%=h fighter.first_name %></td>
+    <td><%=h fighter.last_name %></td>
+    <td><%=h fighter.nickname %></td>
+    <td><%=h fighter.weightclass %></td>
+    <td><%= link_to 'Show', fighter %></td>
+    <td><%= link_to 'Edit', edit_fighter_path(fighter) %></td>
+    <td><%= link_to 'Destroy', fighter, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New fighter', new_fighter_path %>

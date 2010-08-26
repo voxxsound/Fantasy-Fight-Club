@@ -1,0 +1,13 @@
+<p>
+  <b>Club:</b>
+  <%=h @club_membership.club_id %>
+</p>
+
+<p>
+  <b>Fighter:</b>
+  <%=h @club_membership.fighter_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_club_membership_path(@club_membership) %> |
+<%= link_to 'Back', club_memberships_path %>

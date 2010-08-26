@@ -1,0 +1,18 @@
+<p>
+  <b>Party:</b>
+  <%=h @club.party_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @club.name %>
+</p>
+
+<p>
+  <b>League:</b>
+  <%=h @club.league_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_club_path(@party, @club) %> |
+<%= link_to 'Back', party_clubs_path %>

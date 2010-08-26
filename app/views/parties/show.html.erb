@@ -1,0 +1,24 @@
+<p>
+  <b>First name:</b>
+  <%=h @party.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%=h @party.last_name %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%=h @party.username %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @party.password %>
+</p>
+
+
+<%= link_to 'Edit', edit_party_path(@party) %> |
+<%= link_to 'Back', parties_path %> |
+<%= link_to 'Add a Club', new_party_club_path(@party) %>

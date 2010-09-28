@@ -2,18 +2,18 @@
 
 <table>
   <tr>
-    <th>Party</th>
+    <th>Owner</th>
     <th>Name</th>
     <th>League</th>
   </tr>
 
 <% @clubs.each do |club| %>
   <tr>
-    <td><%=h club.party_id %></td>
+    <td><%=h club.party.first_name %></td>
     <td><%=h club.name %></td>
-    <td><%=h club.league_id %></td>
+    <td><%=h club.league.name %></td>
     <td><%= link_to 'Show', club %></td>
-    <td><%= link_to 'Edit', edit_party_clubs_path(@party) %></td>
+    <td><%= link_to 'Edit', edit_club_path(club) %></td>
     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
@@ -21,4 +21,4 @@
 
 <br />
 
-<%= link_to 'New club', new_party_clubs_path %>
+<%= link_to 'New club', new_party_club_path(@party) %>

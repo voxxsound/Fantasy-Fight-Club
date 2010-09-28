@@ -5,7 +5,7 @@
 
   <p>
     <%= f.label :party_id %><br />
-    <%= f.text_field :party_id %>
+    <%= @club.party.first_name + " " + @club.party.last_name %>
   </p>
   <p>
     <%= f.label :name %><br />
@@ -13,7 +13,7 @@
   </p>
   <p>
     <%= f.label :league_id %><br />
-    <%= f.text_field :league_id %>
+    <%= @club.league.name %>
   </p>
   <p>
     <%= f.submit 'Update' %>

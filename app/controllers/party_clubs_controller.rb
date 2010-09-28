@@ -16,7 +16,7 @@ class PartyClubsController < ApplicationController
   # GET /clubs/1
   # GET /clubs/1.xml
   def show
-    @club = @party.club.find(params[:id])
+    @club = @party.clubs.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

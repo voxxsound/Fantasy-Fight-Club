@@ -3095,3 +3095,2946 @@ ActionView::TemplateError (undefined method `edit_party_clubs_path' for #<Action
 Rendered rescues/_trace (74.3ms)
 Rendered rescues/_request_and_response (0.2ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:33:43) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:action=>"edit", :controller=>"party_clubs"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["parties", :party_id, "clubs", :id, "edit"] - are they all satisfied?) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league_id %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(@party) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:33:52) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (undefined method `edit_party_clubs_path' for #<ActionView::Base:0x1036db808>) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league_id %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_clubs_path(@party) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:35:13) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (undefined method `edit_party_clubs_path' for #<ActionView::Base:0x103219220>) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league_id %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_clubs_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:35:23) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:party_id=>#<Club id: 1, name: "Aaron's Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-25 19:53:12">, :action=>"edit", :controller=>"party_clubs"}, expected: {:action=>"edit", :controller=>"party_clubs"}, diff: {:party_id=>#<Club id: 1, name: "Aaron's Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-25 19:53:12">}) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league_id %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (77.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:35:32) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (undefined method `edit_party_clubs_path' for #<ActionView::Base:0x1035198f8>) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league_id %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_clubs_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (74.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:35:54) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (undefined local variable or method `new_party_clubs_path' for #<ActionView::Base:0x1035ea8e0>) on line #24 of app/views/party_clubs/index.html.erb:
+21: 
+22: <br />
+23: 
+24: <%= link_to 'New club', new_party_clubs_path %>
+
+    app/views/party_clubs/index.html.erb:24
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:36:03) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (undefined local variable or method `new_clubs_path' for #<ActionView::Base:0x1036c7218>) on line #24 of app/views/party_clubs/index.html.erb:
+21: 
+22: <br />
+23: 
+24: <%= link_to 'New club', new_clubs_path %>
+
+    app/views/party_clubs/index.html.erb:24
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:36:09) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:36:40) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined method `first_name' for #<Class:0x103695c68>) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.clubs.first_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league_id %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:36:49) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Completed in 54ms (View: 50, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:37:05) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+ERROR: compiling _run_erb_app47views47party_clubs47index46html46erb RAISED compile error
+/Users/enablelabs/projects/fight_club/app/views/party_clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ub.party.first_name + " " club.party.last_name ).to_s); @out...
+                              ^
+Function body:           def _run_erb_app47views47party_clubs47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing clubs</h1>\n\n<table>\n  <tr>\n    <th>Party</th>\n    <th>Name</th>\n    <th>League</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+;  @clubs.each do |club| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat((h club.party.first_name + " " club.party.last_name ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h club.name ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h club.league_id ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', club ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Edit', edit_club_path(club) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New club', new_club_path ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/enablelabs/projects/fight_club/app/views/party_clubs/index.html.erb:28:in `compile!'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/enablelabs/projects/fight_club/app/controllers/party_clubs_controller.rb:10:in `index'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rails-2.3.8/lib/commands/server.rb:111
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/enablelabs/projects/fight_club/app/views/party_clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ub.party.first_name + " " club.party.last_name ).to_s); @out...
+                              ^) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.first_name + " " club.party.last_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league_id %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:28:in `compile!'
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (30.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:37:16) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.2ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Completed in 54ms (View: 50, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:37:29) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:37:46) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2010-08-26 10:37:50) [GET]
+Rendering template within layouts/clubs
+Rendering clubs/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/clubs/new]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:37:53) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 47ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:38:09) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2010-08-26 10:38:12) [GET]
+Rendering template within layouts/clubs
+Rendering clubs/new
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/clubs/new]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:38:14) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:38:16) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:38:16) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 45ms (View: 41, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:38:16) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:38:17) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:38:17) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:38:17) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:38:18) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing PartiesController#index (for 127.0.0.1 at 2010-08-26 10:38:36) [GET]
+  [4;35;1mParty Load (0.3ms)[0m   [0mSELECT * FROM "parties" [0m
+Rendering template within layouts/parties
+Rendering parties/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/parties]
+
+
+Processing PartiesController#show (for 127.0.0.1 at 2010-08-26 10:38:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Rendering template within layouts/parties
+Rendering parties/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/parties/1]
+
+
+Processing PartyClubsController#new (for 127.0.0.1 at 2010-08-26 10:38:39) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Rendering party_clubs/new
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" [0m
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/parties/1/clubs/new]
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2010-08-26 10:38:53) [POST]
+  Parameters: {"club"=>{"league_id"=>"1", "name"=>"Aaron's club 2"}, "commit"=>"Create", "authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M="}
+  [4;35;1mClub Create (0.2ms)[0m   [0mINSERT INTO "clubs" ("name", "party_id", "league_id", "created_at", "updated_at") VALUES('Aaron''s club 2', NULL, 1, '2010-08-26 14:38:53', '2010-08-26 14:38:53')[0m
+Redirected to http://localhost:3000/clubs/2
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/clubs]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:38:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (party_clubs_url failed to generate from {:action=>"index", :controller=>"party_clubs"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["parties", :party_id, "clubs"] - are they all satisfied?) on line #18 of app/views/clubs/show.html.erb:
+15: 
+16: 
+17: <%= link_to 'Edit', edit_club_path(@party, @club) %> |
+18: <%= link_to 'Back', party_clubs_path %>
+
+    (eval):21:in `party_clubs_path'
+    app/views/clubs/show.html.erb:18
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (34.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:40:15) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"2"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x1031dc8e8>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (66.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:41:03) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"2"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x10358abe8>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (23.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:41:05) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"2"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x1031e8288>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (66.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:41:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:42:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `clubs' for nil:NilClass) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @party.clubs.first_name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (74.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:42:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @pclub.first_name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:42:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @pclub.id %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:43:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `party_id' for nil:NilClass) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @pclub.party_id %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (74.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:43:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:43:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `first_name' for #<Club:0x103258038>) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @club.first_name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (74.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:43:28) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:43:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:43:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @club.party.first_name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:43:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @club.party.id %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (73.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:44:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @club.party.name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (76.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:44:59) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @club.party.first_name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:45:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @party.first_name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:46:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:47:33) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @club.party.first_name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2010-08-26 10:53:34) [POST]
+  Parameters: {"club"=>{"league_id"=>"1", "name"=>"Aaron's club 2"}, "commit"=>"Create", "authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M="}
+  [4;36;1mClub Create (0.2ms)[0m   [0;1mINSERT INTO "clubs" ("name", "party_id", "league_id", "created_at", "updated_at") VALUES('Aaron''s club 2', NULL, 1, '2010-08-26 14:53:34', '2010-08-26 14:53:34')[0m
+Redirected to http://localhost:3000/clubs/3
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/clubs]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:53:34) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 3) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #3 of app/views/clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @club.party.first_name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/clubs/show.html.erb:3
+    app/controllers/clubs_controller.rb:18:in `show'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#new (for 127.0.0.1 at 2010-08-26 10:54:10) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Rendering party_clubs/new
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" [0m
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/parties/1/clubs/new]
+
+
+Processing PartiesController#index (for 127.0.0.1 at 2010-08-26 10:54:13) [GET]
+  [4;36;1mParty Load (0.3ms)[0m   [0;1mSELECT * FROM "parties" [0m
+Rendering template within layouts/parties
+Rendering parties/index
+Completed in 51ms (View: 4, DB: 0) | 200 OK [http://localhost/parties]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:54:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 10:54:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/clubs/2/edit]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:54:44) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#destroy (for 127.0.0.1 at 2010-08-26 10:54:53) [DELETE]
+  Parameters: {"authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M=", "id"=>"3"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 3) [0m
+  [4;36;1mClub Destroy (0.2ms)[0m   [0;1mDELETE FROM "clubs" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/clubs
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/clubs/3]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:54:53) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing PartyClubsController#new (for 127.0.0.1 at 2010-08-26 10:55:53) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Rendering party_clubs/new
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" [0m
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/parties/1/clubs/new]
+
+
+Processing PartyClubsController#new (for 127.0.0.1 at 2010-08-26 10:56:09) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Rendering party_clubs/new
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" [0m
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/parties/1/clubs/new]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 10:56:12) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.first_name + " " + club.party.last_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2010-08-26 10:56:59) [POST]
+  Parameters: {"club"=>{"league_id"=>"1", "name"=>"test club 2"}, "commit"=>"Create", "authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M="}
+  [4;35;1mClub Create (0.2ms)[0m   [0mINSERT INTO "clubs" ("name", "party_id", "league_id", "created_at", "updated_at") VALUES('test club 2', NULL, 1, '2010-08-26 14:56:59', '2010-08-26 14:56:59')[0m
+Redirected to http://localhost:3000/clubs/4
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/clubs]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:56:59) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/4]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:57:33) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/4]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:57:34) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/4]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:57:37) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/4]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:57:39) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/4]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:57:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 46ms (View: 41, DB: 0) | 200 OK [http://localhost/clubs/4]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:57:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/4]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 10:57:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/4]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 10:57:42) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/clubs/4/edit]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 10:57:44) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:58:11) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x10317a418>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (62.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:58:34) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x1034e8280>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (23.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:58:35) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x10313b038>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (66.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:58:36) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x1034db828>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (24.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:58:36) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x10313aa20>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (66.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:58:37) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x1034dad38>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (23.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:59:07) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x103139eb8>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (66.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:59:15) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x1034da090>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (23.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:59:22) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x103139328>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (66.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:59:23) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x1034d7db8>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (23.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:59:23) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x103138658>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (67.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 10:59:23) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x1034d6da0>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (24.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 11:00:00) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+
+NoMethodError (undefined method `club' for #<Party:0x103137a50>):
+  app/controllers/party_clubs_controller.rb:19:in `show'
+
+Rendered rescues/_trace (66.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 11:00:04) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1 AND ("clubs".party_id = 1)) [0m
+Rendering party_clubs/show
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined method `party_id' for #<Class:0x1034bd9b8>) on line #3 of app/views/party_clubs/show.html.erb:
+1: <p>
+2:   <b>Party:</b>
+3:   <%=h @party.clubs.party_id %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/party_clubs/show.html.erb:3
+    app/controllers/party_clubs_controller.rb:21:in `show'
+
+Rendered rescues/_trace (77.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 11:00:23) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1 AND ("clubs".party_id = 1)) [0m
+Rendering party_clubs/show
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined method `league' for #<Class:0x1035ace00>) on line #13 of app/views/party_clubs/show.html.erb:
+10: 
+11: <p>
+12:   <b>League:</b>
+13:   <%=h @party.clubs.league.name %>
+14: </p>
+15: 
+16: 
+
+    app/views/party_clubs/show.html.erb:13
+    app/controllers/party_clubs_controller.rb:21:in `show'
+
+Rendered rescues/_trace (34.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 11:00:36) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1 AND ("clubs".party_id = 1)) [0m
+Rendering party_clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `edit_party_clubs_path' for #<ActionView::Base:0x103666d50>) on line #17 of app/views/party_clubs/show.html.erb:
+14: </p>
+15: 
+16: 
+17: <%= link_to 'Edit', edit_party_clubs_path(@party, @club) %> |
+18: <%= link_to 'Back', party_clubs_path %>
+
+    app/views/party_clubs/show.html.erb:17
+    app/controllers/party_clubs_controller.rb:21:in `show'
+
+Rendered rescues/_trace (31.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 11:00:43) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1 AND ("clubs".party_id = 1)) [0m
+Rendering party_clubs/show
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 54ms (View: 6, DB: 0) | 200 OK [http://localhost/parties/1/clubs/1]
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 11:00:55) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1 AND ("clubs".party_id = 1)) [0m
+Rendering party_clubs/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/parties/1/clubs/1]
+
+
+Processing PartyClubsController#show (for 127.0.0.1 at 2010-08-26 11:01:06) [GET]
+  Parameters: {"party_id"=>"1", "id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1 AND ("clubs".party_id = 1)) [0m
+Rendering party_clubs/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 107ms (View: 7, DB: 0) | 200 OK [http://localhost/parties/1/clubs/1]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:01:10) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `new_party_clubs_path' for #<ActionView::Base:0x1032f4f28>) on line #24 of app/views/party_clubs/index.html.erb:
+21: 
+22: <br />
+23: 
+24: <%= link_to 'New club', new_party_clubs_path(@party) %>
+
+    app/views/party_clubs/index.html.erb:24
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:01:24) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:01:48) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+ERROR: compiling _run_erb_app47views47party_clubs47index46html46erb RAISED compile error
+/Users/enablelabs/projects/fight_club/app/views/party_clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ub.party.first_name + " " club.party.last_name ).to_s); @out...
+                              ^
+Function body:           def _run_erb_app47views47party_clubs47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing clubs</h1>\n\n<table>\n  <tr>\n    <th>Owner</th>\n    <th>Name</th>\n    <th>League</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+;  @clubs.each do |club| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat((h club.party.first_name + " " club.party.last_name ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h club.name ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h club.league.name ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', club ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Edit', edit_club_path(club) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New club', new_party_club_path(@party) ).to_s); @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/enablelabs/projects/fight_club/app/views/party_clubs/index.html.erb:28:in `compile!'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/enablelabs/projects/fight_club/app/controllers/party_clubs_controller.rb:10:in `index'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rails-2.3.8/lib/commands/server.rb:111
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/enablelabs/projects/fight_club/app/views/party_clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ub.party.first_name + " " club.party.last_name ).to_s); @out...
+                              ^) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.first_name + " " club.party.last_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:28:in `compile!'
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (30.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:01:56) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.first_name + " " + club.party.last_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:02:23) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.3ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.id %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (75.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:02:29) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (undefined method `first_name' for #<Club:0x103504958>) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.first_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (76.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:02:33) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:02:46) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.first_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (72.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:03:35) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.4ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h @party.first_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:03:40) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (undefined method `clubs' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h @party.clubs.first_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:03:51) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 57ms (View: 53, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing ClubsController#destroy (for 127.0.0.1 at 2010-08-26 11:04:01) [DELETE]
+  Parameters: {"authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M=", "id"=>"4"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+  [4;35;1mClub Destroy (0.2ms)[0m   [0mDELETE FROM "clubs" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/clubs
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/clubs/4]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:04:01) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:04:08) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#new (for 127.0.0.1 at 2010-08-26 11:04:41) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mParty Load (0.3ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Rendering party_clubs/new
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" [0m
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/parties/1/clubs/new]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:05:08) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:party_id=>#<Club id: 1, name: "Aaron's Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-25 19:53:12">, :action=>"edit", :controller=>"party_clubs"}, expected: {:action=>"edit", :controller=>"party_clubs"}, diff: {:party_id=>#<Club id: 1, name: "Aaron's Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-25 19:53:12">}) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:05:15) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:action=>"edit", :controller=>"party_clubs"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["parties", :party_id, "clubs", :id, "edit"] - are they all satisfied?) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(@party) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (35.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:05:29) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:05:38) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.first_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:05:44) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.2ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 58ms (View: 53, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:05:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/clubs/2/edit]
+
+
+Processing ClubsController#update (for 127.0.0.1 at 2010-08-26 11:05:56) [PUT]
+  Parameters: {"club"=>{"league_id"=>"1", "name"=>"Aaron's club 2", "party_id"=>"Aaron Barker"}, "commit"=>"Update", "authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M=", "id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+  [4;35;1mClub Update (0.2ms)[0m   [0mUPDATE "clubs" SET "updated_at" = '2010-08-26 15:05:56', "party_id" = 0 WHERE "id" = 2[0m
+Redirected to http://localhost:3000/clubs/2
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:05:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:06:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:06:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:06:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:06:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/2]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:06:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/clubs/2/edit]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:06:06) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:06:23) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 0) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:06:51) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+
+ActionView::TemplateError (undefined method `party' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h @club.party.first_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:07:18) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 0) [0m
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.first_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:07:25) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 0) [0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.id %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:07:42) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing ClubsController#destroy (for 127.0.0.1 at 2010-08-26 11:07:46) [DELETE]
+  Parameters: {"authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M=", "id"=>"2"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+  [4;36;1mClub Destroy (0.2ms)[0m   [0;1mDELETE FROM "clubs" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/clubs
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/clubs/2]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:07:46) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:07:52) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:07:59) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:08:15) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 52ms (View: 11, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#new (for 127.0.0.1 at 2010-08-26 11:08:27) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Rendering party_clubs/new
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" [0m
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/parties/1/clubs/new]
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2010-08-26 11:08:35) [POST]
+  Parameters: {"club"=>{"league_id"=>"1", "name"=>"Aaron's Club 2"}, "commit"=>"Create", "authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M="}
+  [4;36;1mClub Create (0.2ms)[0m   [0;1mINSERT INTO "clubs" ("name", "party_id", "league_id", "created_at", "updated_at") VALUES('Aaron''s Club 2', NULL, 1, '2010-08-26 15:08:35', '2010-08-26 15:08:35')[0m
+Redirected to http://localhost:3000/clubs/5
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/clubs]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:08:35) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 5) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/5]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:08:49) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 5) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 47ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/5]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:08:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 5) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/5]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:09:02) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     <td><%=h club.party.first_name + " " + club.party.last_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (73.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:09:15) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #12 of app/views/party_clubs/index.html.erb:
+9: 
+10: <% @clubs.each do |club| %>
+11:   <tr>
+12:     # <td><%=h club.party.first_name + " " + club.party.last_name %></td>
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+
+    app/views/party_clubs/index.html.erb:12
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:09:28) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing ClubsController#destroy (for 127.0.0.1 at 2010-08-26 11:09:35) [DELETE]
+  Parameters: {"authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M=", "id"=>"5"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 5) [0m
+  [4;36;1mClub Destroy (0.2ms)[0m   [0;1mDELETE FROM "clubs" WHERE "id" = 5[0m
+Redirected to http://localhost:3000/clubs
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/clubs/5]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:09:35) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:10:00) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:10:01) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 45ms (View: 41, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:10:01) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:10:02) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:10:02) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:10:02) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:10:03) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:10:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/clubs/1/edit]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:10:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+
+ActionView::TemplateError (undefined method `first_name' for nil:NilClass) on line #8 of app/views/clubs/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :party_id %><br />
+8:     <%= @party.first_name %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :name %><br />
+
+    app/views/clubs/edit.html.erb:8
+    app/views/clubs/edit.html.erb:3
+
+Rendered rescues/_trace (30.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:11:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+
+ActionView::TemplateError (undefined method `clubs' for nil:NilClass) on line #8 of app/views/clubs/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :party_id %><br />
+8:     <%= @party.clubs.first_name %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :name %><br />
+
+    app/views/clubs/edit.html.erb:8
+    app/views/clubs/edit.html.erb:3
+
+Rendered rescues/_trace (30.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:11:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+
+ActionView::TemplateError (undefined method `club' for nil:NilClass) on line #8 of app/views/clubs/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :party_id %><br />
+8:     <%= @party.club.first_name %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :name %><br />
+
+    app/views/clubs/edit.html.erb:8
+    app/views/clubs/edit.html.erb:3
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:11:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/clubs/1/edit]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:11:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+ERROR: compiling _run_erb_app47views47clubs47edit46html46erb RAISED compile error
+/Users/enablelabs/projects/fight_club/app/views/clubs/edit.html.erb:8: syntax error, unexpected tIVAR, expecting ')'
+...b.party.first_name + " " @club.party.last_name ).to_s); @out...
+                              ^
+Function body:           def _run_erb_app47views47clubs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Editing club</h1>\n\n"
+
+;  form_for(@club) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :party_id ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( @club.party.first_name + " " @club.party.last_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :league_id ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :league_id ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Show', @club ).to_s); @output_buffer.concat " |\n"
+; @output_buffer.concat(( link_to 'Back', clubs_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/enablelabs/projects/fight_club/app/views/clubs/edit.html.erb:27:in `compile!'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/enablelabs/.rvm/gems/ree-1.8.7-head/gems/rails-2.3.8/lib/commands/server.rb:111
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/enablelabs/.rvm/rubies/ree-1.8.7-head/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/enablelabs/projects/fight_club/app/views/clubs/edit.html.erb:8: syntax error, unexpected tIVAR, expecting ')'
+...b.party.first_name + " " @club.party.last_name ).to_s); @out...
+                              ^) on line #8 of app/views/clubs/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :party_id %><br />
+8:     <%= @club.party.first_name + " " @club.party.last_name %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :name %><br />
+
+    app/views/clubs/edit.html.erb:27:in `compile!'
+
+Rendered rescues/_trace (70.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:11:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/clubs/1/edit]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:11:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/clubs/1/edit]
+
+
+Processing ClubsController#update (for 127.0.0.1 at 2010-08-26 11:13:05) [PUT]
+  Parameters: {"club"=>{"name"=>"Aaron's Awesome Club"}, "commit"=>"Update", "authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M=", "id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+  [4;36;1mClub Update (0.3ms)[0m   [0;1mUPDATE "clubs" SET "updated_at" = '2010-08-26 15:13:05', "name" = 'Aaron''s Awesome Club' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/clubs/1
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/clubs/1]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:13:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs/1]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:13:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/clubs/1]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 11:13:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/clubs/1]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:13:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/clubs/1/edit]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:13:48) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing PartyClubsController#new (for 127.0.0.1 at 2010-08-26 11:13:59) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+Rendering party_clubs/new
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" [0m
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/parties/1/clubs/new]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:14:09) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">, :action=>"edit", :controller=>"party_clubs"}, expected: {:action=>"edit", :controller=>"party_clubs"}, diff: {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">}) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:24:33) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">, :action=>"edit", :controller=>"party_clubs"}, expected: {:action=>"edit", :controller=>"party_clubs"}, diff: {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">}) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(@party, club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (78.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:26:37) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `edit_party_clubs_path' for #<ActionView::Base:0x103447d80>) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_clubs_path(@party, club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (74.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:26:41) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">, :action=>"edit", :controller=>"party_clubs"}, expected: {:action=>"edit", :controller=>"party_clubs"}, diff: {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">}) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(@party, club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (78.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:27:30) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:27:52) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:action=>"edit", :controller=>"party_clubs"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["parties", :party_id, "clubs", :id, "edit"] - are they all satisfied?) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(@party, @club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (76.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:28:25) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:action=>"edit", :controller=>"party_clubs"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["parties", :party_id, "clubs", :id, "edit"] - are they all satisfied?) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (78.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:28:34) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.2ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">, :action=>"edit", :controller=>"party_clubs"}, expected: {:action=>"edit", :controller=>"party_clubs"}, diff: {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">}) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (78.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:28:38) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:action=>"edit", :controller=>"party_clubs"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["parties", :party_id, "clubs", :id, "edit"] - are they all satisfied?) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(@party) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (77.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:28:46) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">, :action=>"edit", :controller=>"party_clubs"}, expected: {:action=>"edit", :controller=>"party_clubs"}, diff: {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">}) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:28:49) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">, :action=>"edit", :controller=>"party_clubs"}, expected: {:action=>"edit", :controller=>"party_clubs"}, diff: {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">}) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:28:55) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `edit_party_clubs_path' for #<ActionView::Base:0x1031701e8>) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_clubs_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:29:00) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">, :action=>"edit", :controller=>"party_clubs"}, expected: {:action=>"edit", :controller=>"party_clubs"}, diff: {:party_id=>#<Club id: 1, name: "Aaron's Awesome Club", party_id: 1, league_id: 1, created_at: "2010-08-25 19:51:14", updated_at: "2010-08-26 15:13:05">}) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (35.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:29:12) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:action=>"edit", :controller=>"party_clubs"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["parties", :party_id, "clubs", :id, "edit"] - are they all satisfied?) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(@club) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:29:18) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+
+ActionView::TemplateError (edit_party_club_url failed to generate from {:action=>"edit", :controller=>"party_clubs"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["parties", :party_id, "clubs", :id, "edit"] - are they all satisfied?) on line #16 of app/views/party_clubs/index.html.erb:
+13:     <td><%=h club.name %></td>
+14:     <td><%=h club.league.name %></td>
+15:     <td><%= link_to 'Show', club %></td>
+16:     <td><%= link_to 'Edit', edit_party_club_path(@club, @party) %></td>
+17:     <td><%= link_to 'Destroy', club, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+19: <% end %>
+
+    (eval):17:in `edit_party_club_path'
+    app/views/party_clubs/index.html.erb:16
+    app/views/party_clubs/index.html.erb:10:in `each'
+    app/views/party_clubs/index.html.erb:10
+    app/controllers/party_clubs_controller.rb:10:in `index'
+
+Rendered rescues/_trace (78.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:29:36) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing PartyClubsController#index (for 127.0.0.1 at 2010-08-26 11:29:44) [GET]
+  Parameters: {"party_id"=>"1"}
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering party_clubs/index
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/parties/1/clubs]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 11:29:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/clubs/1/edit]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 11:29:57) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2010-08-26 15:19:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/edit
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/clubs/1/edit]
+
+
+Processing ClubsController#update (for 127.0.0.1 at 2010-08-26 15:19:40) [PUT]
+  Parameters: {"club"=>{"name"=>"Aaron's Club"}, "commit"=>"Update", "authenticity_token"=>"RXSTK24AYtEOI4kXUzPKmSvfvpCAs/PWq7dDrYKuQ0M=", "id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+  [4;36;1mClub Update (0.2ms)[0m   [0;1mUPDATE "clubs" SET "updated_at" = '2010-08-26 19:19:40', "name" = 'Aaron''s Club' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/clubs/1
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/clubs/1]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 15:19:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 50ms (View: 7, DB: 0) | 200 OK [http://localhost/clubs/1]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 15:19:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;35;1mParty Load (0.1ms)[0m   [0mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;36;1mLeague Load (0.1ms)[0m   [0;1mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/clubs/1]
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2010-08-26 15:19:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/clubs
+Rendering clubs/show
+  [4;36;1mParty Load (0.1ms)[0m   [0;1mSELECT * FROM "parties" WHERE ("parties"."id" = 1) [0m
+  [4;35;1mLeague Load (0.1ms)[0m   [0mSELECT * FROM "leagues" WHERE ("leagues"."id" = 1) [0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/clubs/1]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-26 15:19:46) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-08-31 09:58:47) [GET]
+  [4;35;1mClub Load (0.3ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/clubs]
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2010-09-14 15:03:33) [GET]
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/clubs
+Rendering clubs/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/clubs]
